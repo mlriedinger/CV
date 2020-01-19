@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="bloc_page_contact">
+			<h2>Contact</h2>
+
+			<form method="post" action="https://httpbin.org/post" id="formContact">
+				<fieldset>
+					<legend>Qui êtes-vous ?</legend>
+					<p>	<label for="form_nom">Votre nom : </label><input type="text" name="form_nom" id="form_nom" placeholder="Ex: Durand"/><br/>
+						<label for="form_prenom">Votre prénom : </label><input type="text" name="form_prenom" id="form_prenom" placeholder="Ex: Marie"/><br/>
+						<label for="form_email">Votre adresse mail : </label><input type="email" name="form_email" id="form_email"/><br/>
+						<label for="form_region">D'où venez-vous ? </label><select name="form_region" id="form_region">
+							<option value="savoie">Savoie</option>
+							<option value="haute_savoie">Haute-Savoie</option>
+							<option value="isere">Isère</option>
+							<option value="rhone">Rhône</option>
+							<option value="ain">Ain</option></select></p>
+					<p>	Vous êtes : 
+						<input type="radio" name="form_h_f" value="homme" id="homme"/><label for="homme">un homme</label>
+						<input type="radio" name="form_h_f" value="femme" id="femme"/><label for="femme">une femme</label></p>
+
+					<p>	Indiquez votre tranche d'âge :<br/>
+						<input type="radio" name="age" value="moins30" id="moins30"/><label for="moins30">Moins de 30 ans</label><br/>
+						<input type="radio" name="age" value="entre30et40" id="entre30et40"/><label for="entre30et40">Entre 30 et 40 ans</label><br/>
+						<input type="radio" name="age" value="plus40" id="plus40"/><label for="plus40">Plus de 40 ans</label></p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Votre message</legend>
+					<p>
+						<textarea name="message" id="message" placeholder="Ecrivez votre message ici."></textarea>
+					</p>
+				</fieldset>
+
+				<p id="boutonEnvoyer">
+					<input type="submit" name="submit" value="Envoyer"/>
+				</p>
+			</form>
+		</div>
+		<a href="index.html"><img src="img/arrow.png" alt="Flèche vers le haut" id="fleche_retour"/></a>
+	</body>
+</html>
